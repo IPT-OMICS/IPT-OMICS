@@ -13,7 +13,7 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   Contents 
+   Contents <https://ipt-omics.readthedocs.io/en/latest/index.html>
    help <https://ipt-omics.readthedocs.io/en/latest/help.html>
    structure 
    access/index
