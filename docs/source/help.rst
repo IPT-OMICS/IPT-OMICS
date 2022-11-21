@@ -1,7 +1,7 @@
 Getting Help
 ============
 
-The primary point of contact for users of the HPC OMICS at Institut Pasteur de Tunis.
+The primary point of contact for users of the HPC OMICS is support team at Institut Pasteur de Tunis.
 
 Users in Institut Pasteur de Tunis are asked to contact the institut internal support team.
 
