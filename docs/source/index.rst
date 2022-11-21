@@ -18,7 +18,7 @@ Contents
 
 .. toctree::
 
-   Content
+   Contents
    Getting Help
    Cluster Structure
    Accessing the Cluster
