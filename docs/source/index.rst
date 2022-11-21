@@ -15,7 +15,7 @@ Contents
 
    Contents <https://ipt-omics.readthedocs.io/en/latest/index.html#contents>
    help <https://ipt-omics.readthedocs.io/en/latest/index.html#help>
-   structure
+   structure <https://ipt-omics.readthedocs.io/en/latest/index.html#help>
    access/index
    how-to/index
    software/index
