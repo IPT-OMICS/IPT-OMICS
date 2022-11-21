@@ -13,7 +13,7 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   Contents <https://info.hpc.sussex.ac.uk/hpc-guide/index.html#contents>
+   Contents <https://ipt-omics.readthedocs.io/en/latest/index.html#contents>
    help
    structure
    access/index
