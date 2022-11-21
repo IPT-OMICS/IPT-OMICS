@@ -1,11 +1,9 @@
 Cluster Structure
 =================
 
-The HPC cluster at Sussex was originally formed out of two separate clusters developed by IT Services (ITS) and the School of Mathematical and Physical Sciences (MPS). That later merged into what is now the university's cluster.
+The HPC cluster OMICS was formed with the help of institut pasteur de tunis et institut pasteut de paris . 
 
-.. note::
 
-   The hardware that makes up the compute nodes is quite varied, reflecting the number of different groups within the university that have contributed money and hardware at different times.
 
 .. _structure-hardware:
 
@@ -22,13 +20,11 @@ There are 3 main parts to the cluster, as shown in the :ref:`cluster diagram <fi
 
   **Master** - Cluster management node, for privileged users only.
 
-  **Login** - Your primary gateway to the cluster; for submitting your jobs.
-
 * **Service nodes**
 
   **NFS** - File servers for home and research storage.
 
-  **Lustre** - Specialised distributed file system for I/O intensive jobs.
+  **BrightComputing** - Specialised distributed file system for I/O intensive jobs.
 
   **Cluster** - Deployment, monitoring and other services for the cluster.
 
