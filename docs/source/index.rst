@@ -14,7 +14,7 @@ Contents
    :maxdepth: 2
 
    Contents <https://ipt-omics.readthedocs.io/en/latest/index.html#contents>
-   help  <https://ipt-omics.readthedocs.io/en/latest/index.html#help>
+   help <https://ipt-omics.readthedocs.io/en/latest/index.html#help>
    structure
    access/index
    how-to/index
