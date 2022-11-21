@@ -27,4 +27,3 @@ Contents
    Storage
    Queues and Policies
    Requesting Resource
-   
