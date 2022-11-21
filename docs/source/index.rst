@@ -3,10 +3,7 @@ HPC User Guide
 
 .. important::
 
-   These documentation pages are still under active construction, so
-   please be aware that the content can change over time as this is
-   happenening. Please keep an eye on the hpc-users@sussex.ac.uk mailing
-   list for major updates to the content.
+   HPC OMICS
 
 Contents
 --------
