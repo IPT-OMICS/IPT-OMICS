@@ -1,7 +1,7 @@
 contents
 =====
 
-.. _HPC User Guide:
+.. _HPCGuide:
 
 Installation
 ------------
