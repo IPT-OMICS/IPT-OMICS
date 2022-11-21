@@ -27,5 +27,5 @@ Contents
    glossary
    faq
    contributing/index
-   MPS Research Computing <https://info.hpc.sussex.ac.uk/mps/>
-   HPC Blog <https://blog.hpc.sussex.ac.uk/>
+   MPS Research Computing 
+   HPC Blog 
