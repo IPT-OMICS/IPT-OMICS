@@ -3,7 +3,7 @@ contents
 
 .. _HPCGuide:
 
-Installation
+HPCGuide
 ------------
 
 To use Lumache, first install it using pip:
