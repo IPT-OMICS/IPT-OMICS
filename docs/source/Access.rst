@@ -24,6 +24,8 @@ From Linux & OS X
 
 Once your account is set up, you can SSH to the login nodes using your *ITS username and password*:
 
+First open your'e terminal
+
 .. code-block:: bash
 
    ssh <username>@<host>
@@ -44,15 +46,13 @@ From Windows
    windows-file-transfer
    windows-mount-research-volumes
 
-Connected to the Login Gateway: Basic Setup
+Connecting to the cluster using windows
 -------------------------------------------
-Once you have gained access and connected to one of the cluster's login
-gateways, you should first set up your basic shell environment.
+Once you have gained youre login information all you need to do is to install
+putty from Putty<https://www.putty.org> 
 
-A lot of this section we will attempt to standardise and set up for new
-users, but for people with existing accounts it is worth checking here
-for things you might be missing Check if you have the following two
-files on the login gateway
+After installing putty all you need to do is to type host name "IP address" Port "22"
+type youre login and password
 
 At the shell prompt type ``-bash-4.1$ ls -al``::
 
@@ -82,21 +82,18 @@ At the shell prompt type ``-bash-4.1$ ls -al``::
  -rw-------  1 its-username its-username_g  2595 Sep 10 12:35 .viminfo
  -rw-------  1 its-username its-username_g  1677 Sep 18 12:52 .Xauthority
 
-Look for either of the following files ``.bashrc``, ``.bashprofile`` and ``.profile``
+`
 
-When you connect via ssh, your shell will read from .bash_profile and
-.profile if they are present (hence you only need one or the other of
-these).
+When you connect via ssh, you can load the tools you need using module load command
 
-As a bare minimum, your .bash_profile should contain:::
+example:::
 
- module load sge
+ module load fastqc
  module load gcc
 
-The sge module contains the commands needed to submit jobs to the
-cluster and gcc is needed if you use gcc at all which is most people --
+ gcc is needed if you use gcc at all which is most people --
 note if you don't load the gcc module, you will use the system's gcc
-version which does not support the recent AMD cpus we have on certain
+version which does not support the recent Inel cpus we have on certain
 nodes.
 
 
