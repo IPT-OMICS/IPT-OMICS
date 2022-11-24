@@ -30,7 +30,7 @@ There are 3 main parts to the cluster, as shown in the :ref:`cluster diagram <fi
 
 
   +------------------+---------+
-  |Physical Cores    | 120    |
+  |Physical Cores    | 120     |
   +------------------+---------+
   |Total RAM (GB)    | 750     |
   +------------------+---------+
