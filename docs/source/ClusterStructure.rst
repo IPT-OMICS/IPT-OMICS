@@ -24,31 +24,22 @@ There are 3 main parts to the cluster, as shown in the :ref:`cluster diagram <fi
 
   **NFS** - File servers for home and research storage.
 
-  **BrightComputing** - Specialised distributed file system for I/O intensive jobs.
-
-  **Cluster** - Deployment, monitoring and other services for the cluster.
-
-  **Grid** - GridPP infrastructure servers.
-
 * **Worker nodes**
 
   **Compute** - Total figures for current hardware in operation are:
 
+
   +------------------+---------+
-  |Logical Cores     | 3140    |
+  |Physical Cores    | 120    |
   +------------------+---------+
-  |Physical Cores    | 3004    |
+  |Total RAM (GB)    | 750     |
   +------------------+---------+
-  |Total RAM (GB)    | 11941.3 |
-  +------------------+---------+
-  |Total Lustre (TB) | 270.8   |
-  +------------------+---------+
-  |Total NFS (TB)    | 60      |
+  |Total Storage (TB)| 95      |
   +------------------+---------+
 
-  All CPU's are AMD64, x86_64 or 64 bit architecture, made up of a mixture of Intel and AMD nodes varying from 8 cores up to 64 cores per node.
+  All CPU's are Intel, x86_64 or 64 bit architecture, and all of nodes uses the same number of cpu.
 
-  The highest memory node in the cluster has 512GB of RAM across 64 cores.
+  The highest memory node in the cluster has 380GB of RAM .
 
   .. tip::
 
@@ -56,32 +47,31 @@ There are 3 main parts to the cluster, as shown in the :ref:`cluster diagram <fi
 
   .. tip::
 
-     When running batch jobs, the *scheduler* will distribute your work to the compute nodes. You don't interact with the nodes directly. Alternatively, the batch system allows you to use the system :doc:`interactively <interactive>`, i.e. perform tasks in a shell environment. You **must avoid** running jobs directly on the login nodes.
+     When running batch jobs, the *scheduler* will distribute your work to the compute nodes. You don't interact with the nodes directly. Alternatively, the batch system allows you to use the system :doc:`interactively <interactive>`, i.e. perform tasks in a shell environment.
 
 .. _hardware-gpu-nodes:
 
-  **GPU** - There are currently 4 GPU nodes on the cluster:
+  **GPU** - There are currently 5 GPU nodes on the cluster:
 
-  +-----------+---------------------+----------------------+---------------+---------------+
-  | Node      | Hostgroup           | GPU Model            | CUDA Cores    | Memory        |
-  +===========+=====================+======================+===============+===============+
-  | node150   | @gpu_nodes_k20m     | 2x Nvidia Tesla K20m | 2496 per card | 4GB per card  |
-  +-----------+---------------------+----------------------+---------------+---------------+
-  | node151   | @gpu_nodes_k20m     | 2x Nvidia Tesla K20m | 2496 per card | 4GB per card  |
-  +-----------+---------------------+----------------------+---------------+---------------+
-  | node152   | @gpu_nodes_k20m     | 2x Nvidia Tesla K20m | 2496 per card | 4GB per card  |
-  +-----------+---------------------+----------------------+---------------+---------------+
-  | node153   | @gpu_nodes_k40m     | 4x Nvidia Tesla K40m | 2800 per card | 12GB per card |
-  +-----------+---------------------+----------------------+---------------+---------------+
+  +-----------+---------------------+------------------
+  | Node      | GPU Model           |     Memory    |
+  +===========+=====================+===================
+  | node01    | 4x Nvidia Tesla M10 | 8GB per card  |
+  +-----------+---------------------+-------------------
+  | node02    | 4x Nvidia Tesla M10 | 8GB per card  |
+  +-----------+---------------------+-------------------
+  | node03    | 4x Nvidia Tesla M10 | 8GB per card  |
+  +-----------+---------------------+------------------+
+  | node04    | 4x Nvidia Tesla M10 | 8GB per card  |
+  +-----------+---------------------+-------------------
+  | node05    | 4x Nvidia Tesla M10 | 8GB per card  |
+  +-----------+---------------------+-------------------
 
-  **Grid** - Nodes dedicated to running jobs for GridPP infrastructure.
 
 Operating System
 ----------------
 
 - `Scientific Linux <http://scientificlinux.org/>`_
-- `CentOS <http://www.centos.org/>`_
+- `Ubuntu <https://ubuntu.com>`_
 
-.. note::
 
-   Currently all administrative and compute nodes use SL 6.5 (Carbon). Service nodes use a mix of SL and CentOS 6.5.
