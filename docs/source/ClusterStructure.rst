@@ -66,7 +66,7 @@ There are 3 main parts to the cluster, as shown in the :ref:`cluster diagram <fi
   +-----------+---------------------+------------------+
   | node05    | 4x Nvidia Tesla M10 | 8GB per card     |
   +-----------+---------------------+------------------+
-  +===========+=====================+==================+
+  
 
 
 Operating System
