@@ -13,7 +13,7 @@ Contents
    Contents <https://ipt-omics.readthedocs.io/en/latest/index.html>
    help <https://ipt-omics.readthedocs.io/en/latest/help.html>
    Cluster Structure <https://ipt-omics.readthedocs.io/en/latest/ClusterStructure.html>
-   access/index
+   access/index <https://ipt-omics.readthedocs.io/en/latest/Access.html>
    how-to/index
    software/index
    storage
