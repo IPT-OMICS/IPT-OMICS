@@ -8,7 +8,7 @@ Access to the HPC cluster is not granted automatically.
 
 You need to have the following prerequisites:
 
-1. Be a registered member of University of Sussex.
+1. Be a registered member of Institut Pasteur de Tunis.
 2. Have an active IT Services computing account.
 
 To request for access, please email:
