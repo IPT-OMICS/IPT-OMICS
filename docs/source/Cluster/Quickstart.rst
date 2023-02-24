@@ -34,12 +34,14 @@ Tip
 
 Please keep your home directory clean by regularly cleaning old data.
 
-To see your quota, you can use the myquota command to see your maximum limits and current usage.
+
 
 Copy data¶
+=====================
 There are multiple ways to transfer files between a local machine and the cluster, mainly depending on your local operating system. For a Unix-like OS, you can use scp, rsync, sftp commands on the command line. If you are on Windows or prefer a Graphical User Interface, FileZilla  is one of a tools that you can use.
 
 Info
+=====================
 
 More comprehensive guides are available here: File Transfer to/out of the cluster 
 
@@ -73,10 +75,12 @@ Warning
 Loaded software is only for operating in the current terminal session. If you open a new session, it's a blank slate. Therefore, it's advisable to specify and load the needed modules in your job script.
 
 Info
+=====================
 
 For a more thorough guide on modules, please go to Modules guide 
 
 First job¶
+=====================
 The cluster utilizes a scheduler called Slurm to control job execution and distribute running jobs across available physical resources like memory and CPU cores.
 
 The following is an example of how to run your first job. A job script (sbatch file) consists of two main parts - instructions for the scheduler and the actual commands to run for the job, which operate your choice of software. Start with the scheduler instructions:
@@ -129,6 +133,7 @@ Running jobs directly on the cluster, without the queue system, is strictly forb
 There are various options for different kinds of jobs in cluster. Please review the following sections for more information Submitting Jobs , GPU Computing , Interactive Jobs  for more information.
 
 Monitor your job¶
+=====================
 You can inspect the status of your running jobs with the squeue command:
 
 
@@ -144,6 +149,7 @@ You can also see all active submitted jobs with squeue:
 
 squeue -u <test_user>
 Cancel your job¶
+=====================
 You can cancel your job via the scancel command by passing the job ID as an argument.
 
 
