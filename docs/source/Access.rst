@@ -50,9 +50,10 @@ Connecting to the cluster using windows
 -------------------------------------------
 Once you have gained youre login information all you need to do is to install
 putty from Putty<https://www.putty.org> 
-
+ 
 After installing putty all you need to do is to type host name "IP address" and port "22" Enter your login information and password. 
 
+Or you can download MobaXterm from <https://mobaxterm.mobatek.net> it has both a free version or a paid one
 
 When you connect via ssh, you can load the tools you need using module load command
 
@@ -69,7 +70,7 @@ example:::
 Next Steps
 ----------
 
-Once you can login to the login nodes, you then have a few options:
+Once you can login to the master node, you then have a few options:
 
 * See the :doc:`software` section for information about the
   cluster's provided software, such as compilers, SDKs, common
