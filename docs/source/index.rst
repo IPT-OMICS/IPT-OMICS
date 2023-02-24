@@ -14,7 +14,7 @@ Contents
    help <https://ipt-omics.readthedocs.io/en/latest/help.html>
    Cluster Structure <https://ipt-omics.readthedocs.io/en/latest/ClusterStructure.html>
    Accessing the Cluster <https://ipt-omics.readthedocs.io/en/latest/Access.html>
-   how-to/index
+   Cluster/Quick start <https://ipt-omics.readthedocs.io/en/latest/Quickstart.html>
    software/index
    storage
    queues
