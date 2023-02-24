@@ -59,12 +59,7 @@ When you connect via ssh, you can load the tools you need using module load comm
 example:::
 
  module load fastqc
- module load gcc
-
- gcc is needed if you use gcc at all which is most people --
-note if you don't load the gcc module, you will use the system's gcc
-version which does not support the recent Inel cpus we have on certain
-nodes.
+ 
 
 
 
