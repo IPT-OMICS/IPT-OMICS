@@ -2,7 +2,7 @@ Cluster quick start¶
 ====================
 This section is a quick start for someone who is somewhat familiar with Linux/Unix and is looking at how to start using the Institut Pasteur de Tunis cluster quickly.
 
-If you're not familiar with UTHPC and Linux in general, many beginner tutorials are available online. UTHPC team is also actively working on providing a better guides.
+If you're not familiar with omics HPC and Linux in general, many beginner tutorials are available online. Omics Hpc team is also actively working on providing a better guides.
 
 Request an account¶
 ===================
@@ -14,7 +14,7 @@ Alternatively you can email your request to dhamer1995@gmail.com . If you've alr
 
 Cluster login¶
 ==============
-You can access UTHPC cluster from anywhere, but for security reasons please use either of the following:
+You can access Omics HPC cluster from anywhere, but for security reasons please use either of the following:
 
 Be physically in a university building.
 Connect from a remote location utilizing omics VPN .
@@ -26,9 +26,9 @@ To connect from a Windows system, please follow guide for PuTTY  or use Windows 
 
 Your home directory¶
 =====================
-The home directory, which makes all files and directories available on all cluster nodes, resides on a shared file system called GPFS.
+The home directory, which makes all files and directories available on all cluster nodes, resides on a shared file system.
 
-Quotas manage the Disk space consumption. There are two types of quotas - directory size and file count. By default, a user has 2 TB of $HOME space and a maximum file count of 1 million files.
+Quotas manage the Disk space consumption. There are two types of quotas - user qutoes  and projects quotes. By default, a user has 1 TB of $HOME space.
 
 Tip
 
