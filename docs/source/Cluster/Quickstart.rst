@@ -1,34 +1,27 @@
 Cluster quick start¶
 ====================
-This section is a quick start for someone who is somewhat familiar with Linux/Unix and is looking at how to start using the University of Tartu UTHPC clusters quickly.
+This section is a quick start for someone who is somewhat familiar with Linux/Unix and is looking at how to start using the Institut Pasteur de Tunis cluster quickly.
 
 If you're not familiar with UTHPC and Linux in general, many beginner tutorials are available online. UTHPC team is also actively working on providing a better guides.
 
 Request an account¶
 ===================
-In order to open an account with UTHPC, please fill out the form here  to ensure that UTHPC team receives all the necessary information to quickly create the account.
+In order to open an account with omics HPC, please fill out the form here  to ensure that Omics Hpc team receives all the necessary information to quickly create the account.
+https://docs.google.com/forms/d/1vbxurYlNwtrc38sLssLJ865CQf2Awr3kSEAOzl_zjoY/edit
 
-Alternatively you can email your request to support@hpc.ut.ee . If you've already got a UT account, please provide your username with the email. If you are a student, you must also CC your supervisor in the email.
+Alternatively you can email your request to dhamer1995@gmail.com . If you've already got a pasteur account, please provide your username with the email. If you are a student, you must also CC your supervisor in the email.
 
-Galaxy users¶
-=============
-To request an access to Galaxy Tartu Ülikool , please fill out the form here  to assure a quick response. Alternatively you can send an email to galaxy@hpc.ut.ee  but please include also your UT account username.
-
-Info
-----
-
-For more information about Galaxy Tartu Ülikool  go to our galaxy.hpc.ut.ee docs 
 
 Cluster login¶
 ==============
 You can access UTHPC cluster from anywhere, but for security reasons please use either of the following:
 
 Be physically in a university building.
-Connect from a remote location utilizing UT VPN .
-To connect from a Unix-like system like Linux, macOS, WSL, use a Secure Shell Protocol called SSH to log in to rocket.hpc.ut.ee with your UT credentials:
+Connect from a remote location utilizing omics VPN .
+To connect from a Unix-like system like Linux, macOS, WSL, use a Secure Shell Protocol called SSH to log in to 192.168.100.211 with your pasteur credentials:
 
 
-ssh <username>@rocket.hpc.ut.ee
+ssh <username>@192.168.100.211
 To connect from a Windows system, please follow guide for PuTTY  or use Windows Subsystem for Linux (WSL). WSL is highly recommended.
 
 Your home directory¶
