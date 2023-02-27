@@ -133,8 +133,8 @@ You can inspect the status of your running jobs with the squeue command:
 squeue -j 15304092
 
 JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-15304092   testing hello_wo    test_user  R       0:10      1 stage43
-Here you can see the job ’hello_world’ with job-ID ’15304092’ is in state ’RUNNING’ (R). The job runs on the ’testing’ partition on the node ’stage43’ for 10 seconds.
+15304092   testing hello_wo    test_user  R       0:10      1 omics01
+Here you can see the job ’hello_world’ with job-ID ’15304092’ is in state ’RUNNING’ (R). The job runs on the ’testing’ partition on the node ’omics01’ for 10 seconds.
 Be aware, that if the requested resources aren't available, the job status is ’PENDING’ (PD). The job is in the queue, and starts as soon as the requested resources are available.
 
 You can also see all active submitted jobs with squeue:
