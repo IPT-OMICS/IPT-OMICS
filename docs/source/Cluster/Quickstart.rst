@@ -85,15 +85,14 @@ The cluster utilizes a scheduler called Slurm to control job execution and distr
 The following is an example of how to run your first job. A job script (sbatch file) consists of two main parts - instructions for the scheduler and the actual commands to run for the job, which operate your choice of software. Start with the scheduler instructions:
 
 
-UT account
-ETAIS account
+
 
 #!/bin/bash
-#SBATCH -J hello_world
-#SBATCH --partition=testing
-#SBATCH -t 1:00:00
+#SBATCH --time=01:00:00
+#SBATCH --job-name="A long job"
+#SBATCH --mem=10GB      #the amount of memory 
+#SBATCH --output=long-job.out #the output file
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=500
 
 # your code goes below
 
@@ -105,19 +104,8 @@ module load python/3.8.6
 python -c 'print ("Hello world!")'
 The finalized job script looks like this and you should save it into a file, for example hello_world.sh:
 
-
-#!/bin/bash
-#SBATCH -J hello_world
-#SBATCH --partition=testing
-#SBATCH -t 1:00:00
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=500
-
-# your code goes below
-module load python/3.8.6
-
-python -c 'print ("Hello world!")'
 Submit your job¶
+================
 Once you have a job definition script, you can submit your job script to the scheduler. Scheduler allocates the requested resources for your job and give you a job id. If the requested resources are available, your job start immediately. Otherwise, the job stays in queue until sufficient resources are available. To submit your job to Slurm, use the sbatch command:
 
 
@@ -131,8 +119,8 @@ Running jobs directly on the cluster, without the queue system, is strictly forb
 
 There are various options for different kinds of jobs in cluster. Please review the following sections for more information Submitting Jobs , GPU Computing , Interactive Jobs  for more information.
 
-Monitor your job¶
-=====================
+Monitor your job
+================
 You can inspect the status of your running jobs with the squeue command:
 
 
@@ -148,7 +136,7 @@ You can also see all active submitted jobs with squeue:
 
 squeue -u <test_user>
 Cancel your job¶
-=====================
+==================
 You can cancel your job via the scancel command by passing the job ID as an argument.
 
 
