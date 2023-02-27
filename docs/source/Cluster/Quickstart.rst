@@ -52,8 +52,10 @@ To retrieve data from the cluster to your local machine:
 
 
 scp <username>@192.168.100.211:/path/to/file /path/to/target_dir/
+
 Using software¶
-=====================
+================
+
 You can make use of already pre-installed software, or you can compile and install software on your own. Omics Hpc uses an environment module system to make software and specific versions available to users:
 
 For example on searching and loading ’python’ software.
@@ -77,7 +79,7 @@ Loaded software is only for operating in the current terminal session. If you op
  
 
 First job¶
-=====================
+==========
 The cluster utilizes a scheduler called Slurm to control job execution and distribute running jobs across available physical resources like memory and CPU cores.
 
 The following is an example of how to run your first job. A job script (sbatch file) consists of two main parts - instructions for the scheduler and the actual commands to run for the job, which operate your choice of software. Start with the scheduler instructions:
