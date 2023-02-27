@@ -24,8 +24,8 @@ To connect from a Unix-like system like Linux, macOS, WSL, use a Secure Shell Pr
 ssh <username>@192.168.100.211
 To connect from a Windows system, please follow guide for PuTTY  or use Windows Subsystem for Linux (WSL). WSL is highly recommended.
 
-Your home directory¶
-=====================
+Your home directory
+===================
 The home directory, which makes all files and directories available on all cluster nodes, resides on a shared file system.
 
 Quotas manage the Disk space consumption. There are two types of quotas - user qutoes  and projects quotes. By default, a user has 1 TB of $HOME space.
@@ -36,8 +36,8 @@ Please keep your home directory clean by regularly cleaning old data.
 
 
 
-Copy data¶
-=====================
+Copy data
+=========
 There are multiple ways to transfer files between a local machine and the cluster, mainly depending on your local operating system. For a Unix-like OS, you can use scp, rsync, sftp commands on the command line. If you are on Windows or prefer a Graphical User Interface, FileZilla  is one of a tools that you can use.
 
 Info
@@ -53,8 +53,8 @@ To retrieve data from the cluster to your local machine:
 
 scp <username>@192.168.100.211:/path/to/file /path/to/target_dir/
 
-Using software¶
-================
+Using software
+===============
 
 You can make use of already pre-installed software, or you can compile and install software on your own. Omics Hpc uses an environment module system to make software and specific versions available to users:
 
