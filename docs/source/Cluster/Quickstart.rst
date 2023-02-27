@@ -1,11 +1,11 @@
-Cluster quick start¶
-====================
+Cluster quick start
+===================
 This section is a quick start for someone who is somewhat familiar with Linux/Unix and is looking at how to start using the Institut Pasteur de Tunis cluster quickly.
 
 If you're not familiar with omics HPC and Linux in general, many beginner tutorials are available online. Omics Hpc team is also actively working on providing a better guides.
 
-Request an account¶
-===================
+Request an account
+==================
 In order to open an account with omics HPC, please fill out the form here  to ensure that Omics Hpc team receives all the necessary information to quickly create the account.
 https://docs.google.com/forms/d/1vbxurYlNwtrc38sLssLJ865CQf2Awr3kSEAOzl_zjoY/edit
 
@@ -88,10 +88,15 @@ The following is an example of how to run your first job. A job script (sbatch f
 
 
 #!/bin/bash
+
 #SBATCH --time=01:00:00
+
 #SBATCH --job-name="A long job"
+
 #SBATCH --mem=10GB      #the amount of memory 
+
 #SBATCH --output=long-job.out #the output file
+
 #SBATCH --cpus-per-task=1
 
 # your code goes below
@@ -102,10 +107,11 @@ Then add the part for loading software and running a command:
 module load python/3.8.6
 
 python -c 'print ("Hello world!")'
+
 The finalized job script looks like this and you should save it into a file, for example hello_world.sh:
 
-Submit your job¶
-================
+Submit your job
+===============
 Once you have a job definition script, you can submit your job script to the scheduler. Scheduler allocates the requested resources for your job and give you a job id. If the requested resources are available, your job start immediately. Otherwise, the job stays in queue until sufficient resources are available. To submit your job to Slurm, use the sbatch command:
 
 
@@ -135,8 +141,8 @@ You can also see all active submitted jobs with squeue:
 
 
 squeue -u <test_user>
-Cancel your job¶
-==================
+Cancel your job
+===============
 You can cancel your job via the scancel command by passing the job ID as an argument.
 
 
