@@ -141,8 +141,10 @@ You can also see all active submitted jobs with squeue:
 
 
 squeue -u <test_user>
+
 Cancel your job
 ===============
+
 You can cancel your job via the scancel command by passing the job ID as an argument.
 
 
