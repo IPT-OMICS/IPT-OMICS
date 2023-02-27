@@ -41,20 +41,20 @@ Copy data¶
 There are multiple ways to transfer files between a local machine and the cluster, mainly depending on your local operating system. For a Unix-like OS, you can use scp, rsync, sftp commands on the command line. If you are on Windows or prefer a Graphical User Interface, FileZilla  is one of a tools that you can use.
 
 Info
-=====================
-
-More comprehensive guides are available here: File Transfer to/out of the cluster 
+-----
+ 
 
 To copy data to the cluster from your local machine, use the secure copy command scp:
 
 
-scp /path/to/file <username>@@rocket.hpc.ut.ee:/path/to/target_dir/
+scp /path/to/file <username>@@192.168.100.211:/path/to/target_dir/
 To retrieve data from the cluster to your local machine:
 
 
-scp <username>@rocket.hpc.ut.ee:/path/to/file /path/to/target_dir/
+scp <username>@192.168.100.211:/path/to/file /path/to/target_dir/
 Using software¶
-You can make use of already pre-installed software, or you can compile and install software on your own. UTHPC uses an environment module system to make software and specific versions available to users:
+=====================
+You can make use of already pre-installed software, or you can compile and install software on your own. Omics Hpc uses an environment module system to make software and specific versions available to users:
 
 For example on searching and loading ’python’ software.
 
@@ -74,10 +74,7 @@ Warning
 
 Loaded software is only for operating in the current terminal session. If you open a new session, it's a blank slate. Therefore, it's advisable to specify and load the needed modules in your job script.
 
-Info
-=====================
-
-For a more thorough guide on modules, please go to Modules guide 
+ 
 
 First job¶
 =====================
