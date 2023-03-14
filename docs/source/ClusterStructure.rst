@@ -1,7 +1,7 @@
 Cluster Structure
 =================
 
-The HPC cluster OMICS was formed with the help of institut pasteur de tunis et institut pasteut de paris . 
+The IPT HPC-Cluster was formed with the help of institut pasteur de tunis et institut pasteut de paris . 
 
 
 
